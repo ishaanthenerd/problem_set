@@ -1,0 +1,58 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{dirtytalk}
+
+\begin{document}
+
+\begin{center}
+{\LARGE \bf 67 String (Hard)}\\
+{\large Time Limit: 1 second}\\
+{\large Memory Limit: 512 megabytes}\\
+Standard Input, Standard Output
+\end{center}
+
+{\noindent \bf Problem Statement}\\
+Lately, Temoc has been playing too many Roblox obstacle towers in his CS classes, so he hasn't been paying attention to his assignments. After finally deciding that he'll stop procrastinating on it the night before his exam, he looks at the first question of the homework: \newline
+
+\noindent \say{\textbf{For a given integer $N$, find the number of digit strings of length $N$ that contain the substring \say{$67$}. These two digits must be consecutive.}} \newline
+
+\noindent Temoc immediately brainrots and short-circuits. Maybe you can help him. \newline
+
+{\noindent \bf Input Format}\\
+There is only one number in the input, $N$. \newline
+
+{\noindent \bf Constraints}\\
+$2 \leq N \leq 10^9$ \newline
+
+{\noindent \bf Output Format}\\
+Print the number of digit strings of length $N$ that contain the substring \say{$67$}. Since this number may be large, output your answer modulo $10^9 + 7$. \newline
+
+{\noindent \bf Sample I/O 1}\\
+\begin{tabular}{|p{.5\textwidth}|p{.5\textwidth}|}
+    \hline
+    \textbf{Input} & \textbf{Output}\\
+    \hline
+    \texttt{2}
+    &
+    \texttt{1}\\
+    \hline
+\end{tabular} \newline \newline
+
+{\noindent \bf Explanation 1}\\
+There is only one valid string, \say{67}. \newline
+
+{\noindent \bf Sample I/O 2}\\
+\begin{tabular}{|p{.5\textwidth}|p{.5\textwidth}|}
+    \hline
+    \textbf{Input} & \textbf{Output}\\
+    \hline
+    \texttt{3}
+    &
+    \texttt{20}\\
+    \hline
+\end{tabular} \newline \newline
+
+{\noindent \bf Explanation 2}\\
+Either place a \say{67} at the beginning or at the end of the string. The remaining digit has 10 possibilities for a total of 2 * 10 = 20 total.
+
+\end{document}

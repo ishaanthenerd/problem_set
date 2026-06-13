@@ -1,0 +1,55 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+
+\begin{document}
+
+\begin{center}
+{\LARGE \bf Graduation Photo}\\
+{\large Time Limit: 1 second}\\
+{\large Memory Limit: 512 megabytes}\\
+Standard Input, Standard Output
+\end{center}
+
+{\noindent \bf Problem Statement}\\
+Temoc's trying to take a graduation photo with all of his friends, but he keeps on re-arranging them to figure out what kinds of placements he likes. His friends are a bit tired from all the moving around, though - maybe you can help them. \newline
+
+{\noindent \bf Input Format}\\
+The first line contains $N$, the number of people, and $M$, the number of movements. Everyone starts of standing in order of their index ($1, \dots, N$). Each of the next $M$ lines contains two numbers, $a_i$ and $b_i$, which means that the current people who are standing $a^{th}$ to $b^{th}$ from the left (inclusive) should be moved to the far right side in their original order. \newline
+
+{\noindent \bf Constraints}\\
+$1 \leq N \leq 2*10^5$ \newline
+$1 \leq M \leq 2*10^5$ \newline
+$1 \leq a_i \leq b_i \leq N$ \newline
+
+{\noindent \bf Output Format}\\
+Print the final arrangement of people by index. \newline
+
+{\noindent \bf Sample I/O 1}\\
+\begin{tabular}{|p{.5\textwidth}|p{.5\textwidth}|}
+    \hline
+    \textbf{Input} & \textbf{Output}\\
+    \hline
+    \texttt{4 3 \newline 1 2 \newline 1 2 \newline 2 3}
+    &
+    \texttt{1 4 2 3}\\
+    \hline
+\end{tabular} \newline \newline
+
+{\noindent \bf Explanation 1}\\
+The first two movements cancel each other's effects, so the final movement gets persons 2 and 3 to the end. \newline
+
+{\noindent \bf Sample I/O 2}\\
+\begin{tabular}{|p{.5\textwidth}|p{.5\textwidth}|}
+    \hline
+    \textbf{Input} & \textbf{Output}\\
+    \hline
+    \texttt{5 2 \newline 2 4 \newline 1 3}
+    &
+    \texttt{3 4 1 5 2}\\
+    \hline
+\end{tabular} \newline \newline
+
+{\noindent \bf Explanation 2}\\
+The first movement gets persons 2, 3, and 4 to go the end. The second one moves persons 1, 5, and 2.
+
+\end{document}

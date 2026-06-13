@@ -1,0 +1,58 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{dirtytalk}
+
+\begin{document}
+
+\begin{center}
+{\LARGE \bf Cl*ss Median}\\
+{\large Time Limit: 1 second}\\
+{\large Memory Limit: 512 megabytes}\\
+Standard Input, Standard Output
+\end{center}
+
+{\noindent \bf Problem Statement}\\
+Temoc is teaching Shivesh's AI class this semester! Unfortunately, Temoc isn't the greatest at lecturing, and his grade distribution on the final exam is absolutely fried. This causes Shivesh's score to drop all the way to the median of the class. As a result, any time the word \say{class} comes up, if he's referring to Temoc, Shivesh censors the word as \say{cl*ss} just to get back at his teacher. \newline
+
+\noindent A week later, Temoc announces the lowest mode of the final exam, and Shivesh is surprised to find out that his score happens to match! He gets curious and wonders how many possibilities there were for the rest of his classmates' grades. In other words, he wants to know many ways there are to assign grades to each (distinct) student such that both the median and lowest mode match his score. Help him compute this value. \newline
+
+{\noindent \bf Input Format}\\
+The first line contains two integers: N, Shivesh's grade, and K, the class size. \newline
+
+{\noindent \bf Constraints}\\
+$0 \leq N \leq 100$ \newline
+$1 \leq K \leq 99, K$ is odd \newline
+Every person in the class scored an integer number of points from 0 to 100, inclusive. \newline
+
+{\noindent \bf Output Format}\\
+Print the number of possible ways that Shivesh's score matches the median and lowest mode of the class. Since this number can be large, output your answer modulo $1e9 + 7$. \newline
+
+{\pagebreak \noindent \bf Sample I/O 1}\\
+\begin{tabular}{|p{.5\textwidth}|p{.5\textwidth}|}
+    \hline
+    \textbf{Input} & \textbf{Output}\\
+    \hline
+    \texttt{30 3}
+    &
+    \texttt{201}\\
+    \hline
+\end{tabular} \newline \newline
+
+{\noindent \bf Explanation 1}\\
+At least one person had to have matched Shivesh's grade. Call the other two students A and B. If A matched and B didn't, there are 100 possibilities; same for the other way around. If they both matched, there's 1 possibility. Hence, there are 201 total ways for A and B to score to make Shivesh's score the median and lowest mode. \newline
+
+{\noindent \bf Sample I/O 2}\\
+\begin{tabular}{|p{.5\textwidth}|p{.5\textwidth}|}
+    \hline
+    \textbf{Input} & \textbf{Output}\\
+    \hline
+    \texttt{0 1}
+    &
+    \texttt{1}\\
+    \hline
+\end{tabular} \newline \newline
+
+{\noindent \bf Explanation 2}\\
+Temoc was not forgiving...
+
+\end{document}

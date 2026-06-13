@@ -1,0 +1,58 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+
+\begin{document}
+
+\begin{center}
+{\LARGE \bf It's a Small World (Hard)}\\
+{\large Time Limit: 1 second}\\
+{\large Memory Limit: 512 megabytes}\\
+Standard Input, Standard Output
+\end{center}
+
+{\noindent \bf Problem Statement}\\
+Temoc has been lately getting a bit lonely cooped up in his dorm room, so he's decided to do something unthinkable - touch grass. He goes outside and finds some of his friends hanging out at the park. That's when he notices that many of the people at the park are friends of his friends! \newline
+
+\noindent Define a friendship as a relation between two people. Friendships are always mutual: if $A$ is a friend of $B$, then $B$ is a friend of $A$. Two people $A$ and $C$ are acquaintances if they are both friends with a third person $B$. Your goal is to count how many pairs of people are acquaintances. \textbf{The difference between this version and the medium one is that the edges representing friendships do not necessarily form a tree.} \newline
+
+{\noindent \bf Input Format}\\
+The first line will have two integers: $N$, the number of people at the park, and $M$, the number of friendships. Each of the next $M$ lines will contain two integers $x_{i,1}$ and $x_{i,2}$ representing two people who are friends with each other. \newline
+
+{\noindent \bf Constraints}\\
+$1 \leq N \leq 2 * 10^5$ \newline
+$1 \leq M \leq min(2*10^5, N*(N - 1)/2)$ \newline
+$1 \leq x_{i,1},x_{i,2} \leq N$ \newline
+For any distinct $i,j$ such that $1 \leq i,j \leq M$, at least one of $x_{i,1} \neq x_{j,1}$ and $x_{i,2} \neq x_{j,2}$ will hold true. \newline
+
+{\noindent \bf Output Format}\\
+Print the number of pairs of people that are acquaintances. \newline
+
+{\noindent \bf Sample I/O 1}\\
+\begin{tabular}{|p{.5\textwidth}|p{.5\textwidth}|}
+    \hline
+    \textbf{Input} & \textbf{Output}\\
+    \hline
+    \texttt{7 4 \newline 1 2 \newline 2 3 \newline 3 4 \newline 4 5}
+    &
+    \texttt{3}\\
+    \hline
+\end{tabular} \newline \newline
+
+{\noindent \bf Explanation 1}\\
+For each $1 \leq i \leq 3$, person $i$ is acquaintances with person $i + 2$. \newline
+
+{\pagebreak \noindent \bf Sample I/O 2}\\
+\begin{tabular}{|p{.5\textwidth}|p{.5\textwidth}|}
+    \hline
+    \textbf{Input} & \textbf{Output}\\
+    \hline
+    \texttt{7 13 \newline 1 2 \newline 1 3 \newline 1 4 \newline 1 5 \newline 1 6 \newline 1 7 \newline 2 3 \newline 3 4 \newline 4 5 \newline 5 6 \newline 6 7 \newline 7 2}
+    &
+    \texttt{21}\\
+    \hline
+\end{tabular} \newline \newline
+
+{\noindent \bf Explanation 2}\\
+Any pair of people works. Note that they may also already be friends but this has no bearing on whether or not they are acquaintances.
+
+\end{document}
