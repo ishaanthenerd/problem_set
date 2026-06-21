@@ -1,0 +1,49 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+
+\begin{document}
+
+\begin{center}
+{\LARGE \bf Boss Ranking (Hard)}\\
+{\large Time Limit: 1 second}\\
+{\large Memory Limit: 512 megabytes}\\
+Standard Input, Standard Output
+\end{center}
+
+{\noindent \bf Problem Statement}\\
+Shivesh isn't yet done with playing through his favorite videogame, Cuphead. Nonetheless, he's decided to spend his afternoon making a ranking of all of the bosses by difficulty. Some of the bosses may tie for the same rank if they are equally hard; regardless, a boss ranks as the $X^{th}$-hardest if exactly $X - 1$ bosses are strictly easier. \newline
+
+\noindent A ranking is defined as an assignment of a (not necessarily distinct) rank to every boss in the game. Two rankings are considered distinct if there exists at least one rank that has a different number of bosses assigned to it. Under the assumption that all rankings are equally likely, \textbf{determine the expected value of any boss' rank after Shivesh assigns ranks to all $N$ bosses}. \newline
+
+{\noindent \bf Input Format}\\
+The input is a single integer, $N$. \newline
+
+{\noindent \bf Constraints}\\
+$1 \leq N \leq 10^{18}$ \newline
+
+{\noindent \bf Output Format}\\
+Print the expected value of any boss' rank. Your answer will be accepted if it is within \texttt{1e{-6}} of the correct answer. \newline
+
+{\noindent \bf Sample I/O 1}\\
+\begin{tabular}{|p{.5\textwidth}|p{.5\textwidth}|}
+    \hline
+    \textbf{Input} & \textbf{Output}\\
+    \hline
+    \texttt{1}
+    &
+    \texttt{1}\\
+    \hline
+\end{tabular} \newline \newline
+
+{\noindent \bf Sample I/O 2}\\
+\begin{tabular}{|p{.5\textwidth}|p{.5\textwidth}|}
+    \hline
+    \textbf{Input} & \textbf{Output}\\
+    \hline
+    \texttt{3}
+    &
+    \texttt{1.583333}\\
+    \hline
+\end{tabular} \newline \newline
+
+\end{document}
