@@ -17,7 +17,7 @@ ex. N = 3 -> 4
 1 0 0
 1 0 1
 1 2 0
-1 2 3   -> grid sum = 4 * 3 = 12
+1 2 3   -> grid sum = 3 * 4 = 12 (= 3 * 2^(3-1))
 
 in the second half of the rows, each column is the same amount by observation -> treat this as the difference between different N values for this new term
 f(N) = [N(N+1)/2 - avg] / N where avg = sum(i=1 to N-1 of (i * 2^(i-1))) / 2^(N-1)
